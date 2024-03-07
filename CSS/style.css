@@ -20,7 +20,9 @@ body {
     letter-spacing: -0.6000000238418579px;
     text-align: left;  
     border-left: 4px solid rgba(184, 255, 236, 1);
-    padding-left: 16px;
+    padding-left: 24px;
+    border: none;
+    background-color: inherit;
 }
 
 .upper-menu__icon-logo--small-screen {
