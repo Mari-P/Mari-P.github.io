@@ -80,15 +80,13 @@ body {
     letter-spacing: -0.20000000298023224px;
     text-align: left;
     margin-left: 8px;
-    border: none;
-    background-color: inherit;
 }
 
 .image-info--small-screen {
     margin: 16px 0;
     width: 100%;
     height: auto;
-    owerflow: visible;
+    overflow: visible;
 }
 }
 
@@ -175,8 +173,6 @@ body {
         letter-spacing: -0.20000000298023224px;
         text-align: left;
         margin-left: 8px;
-        border: none;
-        background-color: inherit;
     } 
 }
 
@@ -263,8 +259,6 @@ body {
         letter-spacing: -0.20000000298023224px;
         text-align: left;
         margin: 8px;
-        border: none;
-        background-color: inherit;
     } 
 }
 
