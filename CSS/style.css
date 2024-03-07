@@ -36,28 +36,29 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.side-menu__link--scrolling-horizontal {
+.side-menu__button--scrolling-horizontal {
     display: flex;
     overflow-x: auto;
 }
 
-.side-menu__link--scrolling-horizontal::-webkit-scrollbar {
+.side-menu__button--scrolling-horizontal::-webkit-scrollbar {
     width: 0;
 }
 
-.link-menu--scrolling-horizontal {
+.button-menu--scrolling-horizontal {
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.20000000298023224px;
     text-align: center;
-    text-decoration: none;
+    border: none;
+    background-color:rgba(248, 248, 248, 1);
     white-space: nowrap; 
     height: 40px;
     margin-right: 24px;
 } 
 
-.link-menu--scrolling-horizontal:active, .button-menu--scrolling-horizontal:focus {
+.button-menu--scrolling-horizontal:active, .button-menu--scrolling-horizontal:focus {
     border: 2px solid rgba(184, 255, 236, 1);
     background-color: rgba(255, 255, 255, 1); 
     border-radius: 5px;     
@@ -73,14 +74,25 @@ body {
     margin: 0 16px;
 }
 
-.read-more--no-change {
+.read-more__button--no-change {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.20000000298023224px;
     text-align: left;
-    margin-left: 8px;
+    margin: 8px;
+    padding-left: 32px;
+    border: none;
+    background-color:transparent;
 }
-
+.read-more__button--no-change:before {
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("img/icon.png");
+    margin-right: 32px;
+}
+    
 .image-info--small-screen {
     margin: 16px 0;
     width: 100%;
@@ -165,12 +177,15 @@ body {
         gap: 40px;
     }
     
-    .read-more--no-change {
+    .read-more__button--no-change {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.20000000298023224px;
         text-align: left;
-        margin-left: 8px;
+        margin: 8px;
+        padding-left: 32px;
+        border: none;
+        background-color:transparent;
     } 
 }
 
@@ -251,7 +266,7 @@ body {
         gap: 40px;   
     }
     
-    .read-more--no-change {
+    .read-more__button--no-change {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.20000000298023224px;
