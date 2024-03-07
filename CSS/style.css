@@ -36,29 +36,28 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.side-menu__button--scrolling-horizontal {
+.side-menu__link--scrolling-horizontal {
     display: flex;
     overflow-x: auto;
 }
 
-.side-menu__button--scrolling-horizontal::-webkit-scrollbar {
+.side-menu__link--scrolling-horizontal::-webkit-scrollbar {
     width: 0;
 }
 
-.button-menu--scrolling-horizontal {
+.link-menu--scrolling-horizontal {
     color: rgba(126, 126, 130, 1);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.20000000298023224px;
     text-align: center;
+    text-decoration: none;
     white-space: nowrap; 
-    border: none;
-    background-color: inherit;
     height: 40px;
     margin-right: 24px;
 } 
 
-.button-menu--scrolling-horizontal:active, .button-menu--scrolling-horizontal:focus {
+.link-menu--scrolling-horizontal:active, .button-menu--scrolling-horizontal:focus {
     border: 2px solid rgba(184, 255, 236, 1);
     background-color: rgba(255, 255, 255, 1); 
     border-radius: 5px;     
