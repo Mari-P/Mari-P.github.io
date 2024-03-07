@@ -260,7 +260,7 @@ body {
         margin: 8px;
         padding-left: 8px;
         border: none;
-        background-color: inherit;
+        background-color: transparent;
     } 
 }
 
