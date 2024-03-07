@@ -82,6 +82,7 @@ body {
     margin: 8px;
     border: none;
     background-color:transparent;
+    padding-left: 32px;
 }
 .read-more__button--no-change:before {
     content:"";
@@ -89,7 +90,6 @@ body {
     width: 24px;
     height: 24px;
     background-image: url("img/icon.png");
-    padding-right: 32px;
 }
     
 .image-info--small-screen {
