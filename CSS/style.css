@@ -258,6 +258,9 @@ body {
         letter-spacing: -0.20000000298023224px;
         text-align: left;
         margin: 8px;
+        padding-left: 32px;
+        border: none;
+        background-color:transparent;
     } 
 }
 
