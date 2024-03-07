@@ -80,7 +80,6 @@ body {
     letter-spacing: -0.20000000298023224px;
     text-align: left;
     margin: 8px;
-    padding-left: 32px;
     border: none;
     background-color:transparent;
 }
@@ -90,7 +89,7 @@ body {
     width: 24px;
     height: 24px;
     background-image: url("img/icon.png");
-    margin-right: 32px;
+    padding-right: 32px;
 }
     
 .image-info--small-screen {
