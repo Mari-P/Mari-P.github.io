@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+} 
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+
 body {
     background-color: rgba(248, 248, 248, 1);
     font-family: "TT Lakes";
@@ -107,8 +115,7 @@ body {
 .info__image-mobile {
     margin: 0;
     width: 100%;
-    height: auto;
-    
+    height: auto;    
 }
 }
 
@@ -196,8 +203,8 @@ body {
     }
 
     .info__image-tablet {
-        padding-top: 32px;
-        padding-right: 25px;
+        margin-top: 32px;
+        margin-right: 25px;
     }            
 }
 
@@ -305,7 +312,7 @@ body {
     }
 
     .info__image-desktop {
-        padding-right: 28.65px;
+        margin-right: 28.65px;
     }
 }
 
@@ -320,13 +327,6 @@ body {
     font-family: "TT Lakes";
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
     font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "TT Lakes";
-    src: url("TTLakes/TTLakes-Regular.woff") format("woff");
-    font-weight: normal;
     font-style: normal;
 }
 
