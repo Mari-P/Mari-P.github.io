@@ -34,8 +34,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 767.98px) {
 
-.header-tablet, .header-desktop, .info__text-tablet, 
-.info__text-desktop {
+.header-tablet, .header-desktop, .info__text-tablet, .info__text-desktop {
     display: none;
 }  
 
@@ -60,6 +59,7 @@ body {
     text-align: end;
     margin-right: 0;
 }
+    
 .header-mobile__icon {
     margin: 0 4px 0 16.73px;
 }
