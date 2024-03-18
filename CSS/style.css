@@ -18,9 +18,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.20000000298023224px;
     text-align: left;
-    margin-top: 2px;
-    margin-left: 32px;
-    padding: 0;
+    padding-left: 32px;
     border: none;
     background-color: transparent;
 }
@@ -37,22 +35,33 @@ body {
 @media (min-width: 100px) and (max-width: 767.98px) {
 
 .header-tablet, .header-desktop, .info__text-tablet, 
-.info__text-desktop, .info__image-tablet, .info__image-desktop{
+.info__text-desktop {
     display: none;
 }  
 
 .header-mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     height: 88px;
     background-color: rgba(255, 255, 255, 1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
+    border-bottom: 1px solid #D9FFF5;
 }
 
 .header-mobile__button {
-    border: none;
     background-color: transparent;
+    border: none;
+    margin: 0 16px;
+    padding: 0;
+}
+
+.header-mobile__button:nth-child(4) {
+    flex-grow: 1;
+    text-align: end;
+    margin-right: 0;
+}
+.header-mobile__icon {
+    margin: 0 4px 0 16.73px;
 }
 
 .main__title {
@@ -61,20 +70,18 @@ body {
     font-size: 28px;
     letter-spacing: -0.6000000238418579px;
     text-align: left;  
-    border-left: 4px solid rgba(65, 246, 215, 1);
-    margin: 24px 0 0;
     text-indent: 12px;
+    margin: 24px 0 24px 0;
+    border-left: 4px solid rgba(65, 246, 215, 1);
 }
 
 .menu {
     display: flex;
     overflow-x: auto; 
-    height: 40px;
     align-items: center;
     list-style-type: none;
-    margin-top: 24px; 
-    margin-left: 16px;
-    padding: 0;
+    height: 40px;
+    padding-left: 16px; 
 }
 
 .menu::-webkit-scrollbar {
@@ -89,58 +96,65 @@ body {
     line-height: 24px;
     letter-spacing: -0.20000000298023224px;
     text-align: center;
-    background-color: transparent;
     white-space: nowrap; 
     text-decoration: none;
+    background-color: transparent;
     padding: 8px 16.54px 8px;
 } 
 
 .menu__link:hover {
-    border: 2px solid rgba(184, 255, 236, 1);
     background-color: rgba(255, 255, 255, 1); 
+    border: 2px solid rgba(184, 255, 236, 1);
     border-radius: 5px;    
-    padding-top: 8px 16.54px 8px;
+    padding: 8px 14.54px 8px;
 }
 
-.info__text {
+.info {
     color: rgba(27, 28, 33, 1);
     font-size: 14px;
-    font-weight: 300;
     line-height: 18px;
+    font-weight: 100;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
-    margin: 24px 16px 16px;
+    margin: 24px 16px 35px 16px;
 }
    
-.info__image-mobile {
-    margin: 0;
+.info__image {
+    margin-top: 16px;
     width: 100%;
-    height: auto;    
+    height: auto;  
 }
 }
 
 @media (min-width: 768px) and (max-width: 1119.98px) {
    
-    .header-mobile, .header-desktop, .info__text-desktop, .info__image-mobile, .info__image-desktop {
+    .header-mobile, .header-desktop, .info__text-desktop {
         display: none;
     } 
    
     .header-tablet {
-        height: 88px;
-        background-color: rgba(255, 255, 255, 1);
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        height: 88px;
+        background-color: rgba(255, 255, 255, 1);
+        border-bottom: 1px solid #D9FFF5;
         padding: 0 24px;
     }
 
     .header-tablet__button {
+        background-color: transparent;
         border: none;
-        background-color: transparent;   
+        margin-right: 16px;
     }
     
     .header-tablet__button:nth-child(4) {
-        padding-left: 250.73px; 
+        flex-grow: 1;
+        text-align: end;  
+    }
+
+    .header-mobile__icon {
+        margin: 0 20px 0 4px;
     }
 
     .main__title {
@@ -149,19 +163,18 @@ body {
         font-size: 28px;
         letter-spacing: -0.6000000238418579px;
         text-align: left;
-        border-left: 4px solid rgba(65, 246, 215, 1);
-        margin: 24px 0 0;
         text-indent: 24px;
+        border-left: 4px solid rgba(65, 246, 215, 1);
+        margin: 24px 0 32px;
     }
 
     .menu {
         display: flex;
         overflow-x: auto; 
-        height: 40px;
         align-items: center;
         list-style-type: none;
-        margin: 32px 24px 0;
-        padding: 0;
+        height: 40px;
+        padding-left: 24px;
     }
     
     .menu::-webkit-scrollbar {
@@ -176,42 +189,52 @@ body {
         line-height: 24px;
         letter-spacing: -0.20000000298023224px;
         text-align: center;
-        background-color: transparent;
         white-space: nowrap; 
         text-decoration: none;
+        background-color: transparent;
         padding: 8px 16.54px 8px;
     } 
     
     .menu__link:hover {
-        border: 2px solid rgba(184, 255, 236, 1);
         background-color: rgba(255, 255, 255, 1); 
+        border: 2px solid rgba(184, 255, 236, 1);
         border-radius: 5px;    
-        padding-top: 8px 16.54px 8px;
+        padding: 8px 14.54px 8px;
     }
 
     .info {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         color: rgba(27, 28, 33, 1);
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 100;
         line-height: 20px;
         letter-spacing: 0.2px;
         text-align: left;
-        margin-left: 24px;
+        margin: 32px 24px;
         gap: 48px;
     }
 
-    .info__image-tablet {
-        margin-top: 32px;
-        margin-right: 25px;
+    .info__text {
+        margin: 0;
+    }
+
+    .info__image {
+        width:360px;
+        height: 208px;
     }            
 }
 
 @media (min-width: 1120px) {
 
-     .header-mobile, .main__title, .header-tablet, .info__image-mobile, .info__image-tablet {
+     .header-mobile, .main__title, .header-tablet {
         display: none;
+    } 
+
+    .header-desktop {
+        display: flex;
+        justify-content: space-between;
+        margin: 42px 0 8px 0;     
     } 
 
     .header-desktop__title {
@@ -220,19 +243,14 @@ body {
         font-size: 28px;
         letter-spacing: -0.6000000238418579px;
         text-align: left;
-        border-left: 4px solid rgba(65, 246, 215, 1);
         text-indent: 32px; 
+        border-left: 4px solid rgba(65, 246, 215, 1);
+        margin: 0;
     }
     
-    .header-desktop {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 18.76px;     
-    }    
-    
     .header-desktop__repair-button, .header-desktop__checkstatus-button {
-        border: none;
         background-color: inherit;
+        border: none;
         font-family: "TT Lakes";
         font-size: 16px;
         line-height: 24px;
@@ -272,10 +290,10 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        height: 80px;
         list-style-type: none;
-        margin: 0 32px 0;
-        padding: 0; 
+        height: 80px;
+        margin: 0;
+        padding-left: 32px; 
     }
     
     .menu__link {
@@ -285,17 +303,17 @@ body {
         line-height: 24px;
         letter-spacing: -0.20000000298023224px;
         text-align: center;
-        background-color: transparent;
         white-space: nowrap; 
         text-decoration: none;
+        background-color: transparent;
         padding: 8px 19px 8px;
     } 
     
     .menu__link:hover {
-        border: 2px solid rgba(184, 255, 236, 1);
         background-color: rgba(255, 255, 255, 1); 
+        border: 2px solid rgba(184, 255, 236, 1);
         border-radius: 5px;    
-        padding-top: 8px 19px 8px;
+        padding: 8px 17px 8px;
     }
 
     .info {
@@ -306,13 +324,17 @@ body {
         line-height: 20px;
         letter-spacing: 0.20000000298023224px;
         text-align: left;
-        margin-left: 34px; 
-        margin-bottom: 13.78px;
+        margin: 7px 28.65px 0 34px; 
         gap: 36px;   
     }
 
-    .info__image-desktop {
-        margin-right: 28.65px;
+    .info__text {
+        margin-top: 9.22px;
+    }
+
+    .info__image {
+        width: 531.35px;
+        height: 307px;
     }
 }
 
@@ -326,7 +348,7 @@ body {
 @font-face {
     font-family: "TT Lakes";
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
 }
 
