@@ -73,7 +73,7 @@ body {
     display: none;
 }  
 
-.header-mobile:first-child {
+.header-mobile__button:first-child {
     margin-left: 16px;
 }
 
