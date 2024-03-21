@@ -27,6 +27,13 @@ body {
     padding: 0;
 }
 
+
+
+    
+.header-mobile__icon {
+    margin: 0 20px 0 16.73px;
+}
+
 .main__title {
     height: 88px;
     color: rgba(27, 28, 33, 1);
@@ -45,45 +52,6 @@ body {
     width: 4px;
     height: 40px;
     left: 0;
-}
-
-.read-more {
-    font-family: "TT Lakes";
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
-    text-align: left;
-    padding-left: 32px;
-    border: none;
-    background-color: transparent;
-}
-
-.read-more::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-image: url("img/expand.png");
-    transform: translate(-32px);
-}
-
-@media (min-width: 320px) and (max-width: 767.98px) {
-
- .header-mobile__button--tablet, .header-mobile__icon--tablet, .header-desktop, .info__text--tablet, .info__text--desktop {
-    display: none;
-}  
-
-.header-mobile__button:first-child {
-    margin-left: 16px;
-}
-
-.header-mobile__button--repair {
-    flex-grow: 1;
-    text-align: end;
-}
-    
-.header-mobile__icon {
-    margin: 0 20px 0 16.73px;
 }
 
 .menu {
@@ -136,6 +104,41 @@ body {
     width: 100%;
     height: auto;  
 }
+
+.read-more {
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    padding-left: 32px;
+    border: none;
+    background-color: transparent;
+}
+
+.read-more::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("img/expand.png");
+    transform: translate(-32px);
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+    .header-mobile__button--tablet, .header-mobile__icon--tablet, .header-desktop, .info__text--tablet, .info__text--desktop {
+        display: none;
+    }
+
+    .header-mobile__button--repair {
+        flex-grow: 1;
+        text-align: end;
+    }
+
+    .header-mobile__button:first-child {
+        margin-left: 16px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1119.98px) {
@@ -163,38 +166,7 @@ body {
     }
 
     .menu {
-        display: flex;
-        overflow-x: auto; 
-        align-items: center;
-        list-style-type: none;
-        height: 40px;
-        margin: 0;
         padding-left: 24px;
-    }
-    
-    .menu::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-    
-    .menu__link {
-        color: rgba(126, 126, 130, 1);
-        font-family: "TT Lakes";
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.20000000298023224px;
-        text-align: center;
-        white-space: nowrap; 
-        text-decoration: none;
-        background-color: transparent;
-        padding: 8px 16.54px 8px;
-    } 
-    
-    .menu__link:hover {
-        background-color: rgba(255, 255, 255, 1); 
-        border: 2px solid rgba(184, 255, 236, 1);
-        border-radius: 5px;    
-        padding: 8px 14.54px 8px;
     }
 
     .info {
@@ -217,12 +189,13 @@ body {
     .info__image {
         width:360px;
         height: 208px;
+        margin: 0;
     }            
 }
 
 @media (min-width: 1120px) {
 
-     .header-mobile, .main__title {
+     .header-mobile, .main__title, .menu::-webkit-scrollbar {
         display: none;
     } 
 
@@ -289,33 +262,17 @@ body {
         margin: -10px 10px;
     }
 
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        list-style-type: none;
+    .menu--desktop {
         height: 80px;
-        margin: 0;
-        padding-left: 32px; 
+        padding-left: 32px;
+        flex-wrap: wrap;    
     }
     
     .menu__link {
-        color: rgba(126, 126, 130, 1);
-        font-family: "TT Lakes";
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.20000000298023224px;
-        text-align: center;
-        white-space: nowrap; 
-        text-decoration: none;
-        background-color: transparent;
         padding: 8px 19px 8px;
     } 
     
-    .menu__link:hover {
-        background-color: rgba(255, 255, 255, 1); 
-        border: 2px solid rgba(184, 255, 236, 1);
-        border-radius: 5px;    
+    .menu__link:hover {   
         padding: 8px 17px 8px;
     }
 
@@ -338,6 +295,7 @@ body {
     .info__image {
         width: 531.35px;
         height: 307px;
+        margin: 0;
     }
 }
 
