@@ -21,16 +21,20 @@
 }
 
   body {
-    width: 320px;
     margin: 0;
-    padding: 0 24px;  
-    box-shadow: 0 0 50px 0 rgba(0, 0, 50, 0.5);
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);   
 }
 
   .side-menu {
+    width: 320px;
     height: 100vh;
+    margin: 0;
+    padding: 0 24px;  
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 50, 0.5);
 }
  
   .side-menu__header {
@@ -86,7 +90,7 @@
   .menu__link:hover::before {
     content: "";
     position: absolute;
-    background-image: url("img/highlight.png");
+    background-image: url("img/highlight.svg");
     width: 4px;
     height: 32px;
     left: 0;

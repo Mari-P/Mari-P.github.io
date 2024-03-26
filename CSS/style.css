@@ -26,10 +26,7 @@ body {
     margin-right: 16px;
     padding: 0;
 }
-
-
-
-    
+   
 .header-mobile__icon {
     margin: 0 20px 0 16.73px;
 }
@@ -48,7 +45,7 @@ body {
 .main__title::before {
     content: "";
     position: absolute;
-    background-image: url("img/highlight.png");
+    background-image: url("img/highlight.svg");
     width: 4px;
     height: 40px;
     left: 0;
@@ -121,7 +118,7 @@ body {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url("img/expand.png");
+    background-image: url("img/expand.svg");
     transform: translate(-32px);
 }
 
@@ -218,7 +215,7 @@ body {
     .header-desktop__title::before {
         content: "";
         position: absolute;
-        background-image: url("img/highlight.png");
+        background-image: url("img/highlight.svg");
         width: 4px;
         height: 40px;
         left: 0;
@@ -247,7 +244,7 @@ body {
     .header-desktop__repair-button::after {
         content: "";
         position: absolute;
-        background-image: url("img/repair.png");
+        background-image: url("img/repair.svg");
         width: 40px;
         height: 40px;
         margin: -10px 10px;    
@@ -256,7 +253,7 @@ body {
     .header-desktop__checkstatus-button::after {
         content: "";
         position: absolute;
-        background-image: url("img/checkstatus.png");
+        background-image: url("img/checkstatus.svg");
         width: 40px;
         height: 40px;
         margin: -10px 10px;
