@@ -72,10 +72,6 @@
     margin-bottom: 32px;      
 } 
 
-  .list__link:last-child {
-    margin-bottom: 0;
-}
-
   .list__link a {
     color: rgba(27, 28, 33, 1);
     text-decoration: none;  
