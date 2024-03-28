@@ -55,14 +55,6 @@ html, body {
     border-radius: 5px;  
 }
 
-.button__read-more {
-    margin: 24px 0 34px 0;
-}
-
-.button__hide {
-    margin: 6px 0 14px 0;
-}
-
 .read-more, .hide {
     height: 24px;
     font-family: "TT Lakes";
@@ -86,6 +78,14 @@ html, body {
 
 .hide::before {
     transform: translate(-32px) rotate(180deg);
+}
+
+.button__read-more {
+    margin: 24px 0 34px 0;
+}
+
+.button__hide {
+    margin: 22px 0 14px 0;
 }
 
 .hide--close, .read-more--hide, .brand--open {

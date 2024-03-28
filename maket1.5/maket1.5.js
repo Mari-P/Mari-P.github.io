@@ -20,8 +20,8 @@ const swiper = new Swiper(".swiper", {
 })
 
 let button = document.querySelector(".read-more")
-let brandOpen = document.querySelector(".brand")
 let brandClose = document.querySelector(".hide")
+let brandOpen = document.querySelector(".brand")
 
 button.addEventListener("click", function () {
     button.classList.add("read-more--hide")
