@@ -1,0 +1,211 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
+} 
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+
+.page-brand {
+    min-height: 322px;
+    margin: 0;
+    padding: 0; 
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.page-brand__header {
+    min-width: 304px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(217, 255, 245, 1);
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);   
+}
+
+.header__title {
+    font-family: "TT Lakes";
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    margin: 0;
+    padding: 16px 0 16px 0;
+    color: rgba(126, 126, 130, 1);
+}
+
+.brand__button {
+    min-width: 224px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 16px;    
+}
+
+.brand__button:hover {
+    border: 1px solid rgba(217, 255, 245, 1);
+    border-radius: 5px;  
+}
+
+.button__read-more {
+    margin: 24px 0 34px 0;
+}
+
+.button__hide {
+    margin: 6px 0 14px 0;
+}
+
+.read-more, .hide {
+    height: 24px;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    padding: 0 0 0 32px;
+    border: none;
+    background-color: transparent;   
+}
+
+.read-more::before, .hide:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("img/expand.svg");
+    transform: translate(-32px);
+}
+
+.hide::before {
+    transform: translate(-32px) rotate(180deg);
+}
+
+.hide--close, .read-more--hide, .brand--open {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+.main__button {
+    display: none;
+}
+
+.page-brand {
+    min-width: 320px;
+    min-height: 234px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.page-brand__main::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 81px;
+    top: 7px;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.brand {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.brand__button {
+    margin: 16px 16px 16px 0;  
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    max-width: 240px;  
+}
+
+.swiper .swiper-pagination-bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    color: rgba(181, 182, 188, 1);
+    background: rgba(221, 221, 221, 1); 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1119.98px) {
+
+.page-brand {
+    min-width: 768px;
+    padding-left: 24px;
+}
+
+.brand {
+    height: 184px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 224px);
+    column-gap: 24px;
+    row-gap: 16px;
+    margin: 0;
+    padding: 24px 24px 24px 0;
+    overflow: hidden;
+}
+
+.brand--open {
+    height: auto;
+}    
+}
+
+@media (min-width:1120px) {
+
+.page-brand {
+    min-width: 1120px;
+    padding-left: 32px;   
+}
+
+.brand {
+    height: 184px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    column-gap: 32px;
+    row-gap: 16px;
+    padding: 24px 32px 24px 0;
+    overflow: hidden; 
+}
+
+.brand__button {
+    width: 240px;
+}
+
+.brand--open {
+    height: auto;
+}
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("TTLakes/TTLakes-Light.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("TTLakes/TTLakes-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes"; 
+    font-style: normal;
+    font-weight: 400;
+    src: url("TTLakes/TTLakes-Medium.woff") format("woff");
+}

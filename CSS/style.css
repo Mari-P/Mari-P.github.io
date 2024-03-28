@@ -1,15 +1,16 @@
-html {
+html, body {
     box-sizing: border-box;
+    
+    font-family: "TT Lakes";
+    margin: 0;
 } 
 
 *, *:before, *:after {
     box-sizing: inherit;
-} 
+}
 
-body {
-    background-color: rgba(248, 248, 248, 1);
-    font-family: "TT Lakes";
-    margin: 0;
+.page-main {
+    background-color: rgba(248, 248, 248, 1);  
 }
 
 .header-mobile {
@@ -199,7 +200,7 @@ body {
     .header-desktop {
         display: flex;
         justify-content: space-between;
-        margin: 42px 0 8px 0;     
+        padding: 42px 0 8px 0;   
     } 
 
     .header-desktop__title {
@@ -209,6 +210,7 @@ body {
         letter-spacing: -0.6000000238418579px;
         text-align: left;
         text-indent: 32px; 
+         
         margin: 0;
     }
 
@@ -292,7 +294,7 @@ body {
     .info__image {
         width: 531.35px;
         height: 307px;
-        margin: 0;
+        margin-bottom: 49px;
     }
 }
 
