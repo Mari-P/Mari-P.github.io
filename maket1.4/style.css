@@ -1,5 +1,8 @@
-  html {
-    box-sizing: border-box;
+  html, body {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.1); 
 } 
 
 *, *:before, *:after {
@@ -20,15 +23,9 @@
     opacity: 0.8;
 }
 
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.1); 
-}
-
   .side-menu {
     width: 320px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0 24px;  
     display: flex;
